@@ -1,54 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Dalals ToDo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <div>
-        <h1>Create your task </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h1>left</h1>
+                   <!-- todo cards section-->
+    <div class="card">
+        <h3>Write your ToDo</h3>
         <!-- KEEP THE SELECT EMPTY. IT WILL BE FILLED BY JS  -->
-        <select id="categories-list" title="All">
-        </select>
 
         <input type="text" name="new-task" id="new-task" placeholder="* Add a new task">
+        <h3>Choose a category</h3>
+        <select id="categories-list" title="All"></select>
+        <br>
+        <br>
+        <button type="button" class="btn-second" onclick="addTask()">Add</button>
     </div>
 
     <div>
-        <h1>Create your category </h1>
+        <h3>Create your category </h3>
         <input type="text" name="new-category" id="new-category" placeholder="* Add a new category">
+        <br>
+        <br>
+        <button type="button" class="btn-second" onclick="addCategory()">Create a category</button>
+        <!-- <select id="categories-list" title="All"></select> -->
     </div>
 
-    <!-- FILTERING DIV -->
+            </div> <!-- close left column -->
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h1>Right</h1>
+                    <!-- FILTERING DIV -->
     <div>
-        <h1>filter by category</h1>
+
+        <div>
+            <input type="checkbox" name="done" id="done">
+            <label for="done">Show done only</label>
+        </div>
+        <h3>filter by category</h3>
         <!-- KEEP THE SELECT EMPTY. IT WILL BE FILLED BY JS  -->
         <select id="categories-list-filter" title="All">
         </select>
+        <button type="button" onclick="filterTasks()">Filter</button>
         <!-- DONE for filtering thing -->
-        <div>
-            <input type="checkbox" name="done" id="done">
-            <label for="done">Filter by done</label>
-        </div>
+
     </div>
+    <div id="tasks-list"></div>
+
     <hr>
 
     <!-- KEEP THE DIV EMPTY. IT WILL BE FILLED BY JS  -->
     <div id="tasks-list"></div>
 
 
+            </div> <!-- close right column -->
+        </div><!--close big row-->
+</div> <!--close div container--> 
 </body>
-
 <script src="./components/categoryItem.js"></script>
 <script src="./components/taskItem.js"></script>
 
 <script src="./engine.js"></script>
 <script src="./index.js"></script>
-
 </html>
