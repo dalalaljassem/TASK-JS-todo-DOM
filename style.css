@@ -1,20 +1,21 @@
 .todo-item {
   display: flex;
-  background-color: rgb(196, 196, 196);
+  background-color: rgba(255, 206, 71, 0.966);
   border-radius: 10px;
-  margin: 7px;
+  margin: 10px;
   color: #000000;
+  
 }
 
 body {
-  background: rgb(26, 26, 26);
+  background: white;
   font: 14px, "Cairo", sans-serif;
   color: black;
   text-align: center;
 }
 
 button {
-  background-color: #393939;
+  background-color: rgb(18, 100, 223);
   border: none;
   color: white;
   text-align: center;
@@ -25,86 +26,35 @@ button {
 }
 
 button:hover {
-  background-color: rgb(147, 192, 194);
+  background-color: #0b1572;
   color: white;
 }
 #new-category {
+  background-color: rgb(237, 237, 237);
+  padding: 10px;
+  width: 50%;
   text-align: center;
-  margin-top: 0px;
-  outline: 0;
   border-radius: 5px;
   border-width: 0px;
-  padding: 7px;
-  background-color: rgb(237, 237, 237);
-  -webkit-box-shadow: 0px 10px 13px -7px #000000,
-    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
-  box-shadow: 0px 10px 13px -7px #000000,
-    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
 }
 
 #categories-list {
+  width: 50%;
   border-radius: 7px;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000,
-    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
-  box-shadow: 0px 10px 13px -7px #000000,
-    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
   padding: 5.5px;
 }
 
 #new-task {
+  width: 50%;
   border-radius: 5px;
   padding: 7px;
   border-width: 0px;
   background-color: rgb(237, 237, 237);
-  -webkit-box-shadow: 0px 10px 13px -7px #000000,
-    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
-  box-shadow: 0px 10px 13px -7px #000000,
-    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
 }
 
 #categories-list-filter {
+  width: 50%;
   border-radius: 7px;
   padding: 5.5px;
   align-content: center;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000,
-    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
-  box-shadow: 0px 10px 13px -7px #000000,
-    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
 }
-
-/* 
-body {
-  background: #020631;
-  font: 14px, "Cairo", sans-serif;
-  color: white;
-}
-
-h1 {
-  color: white;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-}
-.card {
-  background-color: black;
-  width: 800px;
-  height: 400px;
-  text-align: center;
-  justify-content: end;
-  padding: 50px;
-  margin: 100px;
-  margin-top: 100px;
-  display: inline-block;
-  font-size: 50x;
-}
-.btn-second {
-  background-color: rgb(76, 86, 203, 255);
-  color: rgb(240, 247, 247);
-  text-align: center;
-  width: 50px;
-  padding: 0.5px;
-  cursor: grabbing;
-  border-radius: 50px;
-} */
